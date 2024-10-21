@@ -1,0 +1,58 @@
+
+.menu-button {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+.side-menu {
+    width: 250px;
+    height: 100%;
+    background-color: #002740;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    transition: right 0.5s ease;
+    z-index: 1000;
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 50px 20px;
+}
+
+.side-menu ul li {
+    margin: 20px 0;
+}
+
+.side-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.side-menu ul li a:hover {
+    color: #f4f4f4;
+}
+
+.side-menu.active {
+    right: 0;
+}
+
+.close-button {
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    content: url("../../img/close-btn.svg");
+}
+
+.close-button:hover {
+    color: #f4f4f4;
+}

@@ -1,0 +1,60 @@
+.about__product {
+  padding: 96px 0 100px 100px;
+  justify-content: center;
+}
+.about__box {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 82px;
+}
+.about__text_block {
+  width: 605px;
+}
+.about__title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 131%;
+  color: #161c24;
+  margin-bottom: 24px;
+}
+.about__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 178%;
+  color: #454f5b;
+}
+.about__img {
+  max-width: 605px;
+  height: auto;
+}
+
+
+@media (max-width:768px){
+  .about__product{
+    padding: 20px 10px;
+  }
+  .about__box{
+    display: block;
+  }
+  .about__text_block{
+width: 100%;
+  }
+  .about__title{
+    font-size: 25px;
+  }
+  .about__img{
+    width: 95%;
+    height: auto;
+    
+  }
+  .about__text{
+    margin-bottom: 20px;
+  }
+  .about__img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); /* Dastlabki soya */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Hover animatsiyasi uchun o'zgarish */
+  }
+}

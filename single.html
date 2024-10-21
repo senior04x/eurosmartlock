@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title class="main__title">Euro smart lock single</title>
+    <link
+      class="title__img"
+      rel="icon"
+      href="./img/title-logo.png"
+      type="image/x-icon"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header__top">
+      <div class="container">
+        <div class="header__top_block">
+          <p class="header__top_text">
+            Скидка 10% по промокоду “ZAMOK” на все заказы до 10.09
+          </p>
+          <a class="header__top_link" href="./index.html">Главная</a>
+        </div>
+      </div>
+    </header>
+    <header class="header">
+      <div class="container">
+        <div class="header__box">
+           <div class="logo__box">
+            <a href="./index.html">
+              <img class="logo2" src="./img/logo.png" alt="logo" />
+            </a>
+              <input
+                class="header__input"
+                id="search-input"
+                type="text"
+                autocomplete="off"
+                placeholder="Поиск продуктов и категорий"
+              />
+           </div>
+          
+           <div class="header__btn_box" id="menu">
+            <a class="phone__number big-p" href="https://www.instagram.com/euro_smartlock/" target="_blank">
+              Инстаграм
+            </a>
+            <a class="phone__number big-p" href="https://yandex.uz/maps/-/CDTHIO1-" target="_blank">
+              Наш адрес
+            </a>
+            <a class="phone__number big-p" href="tel:+998909447240">
+              Контакты
+            </a>
+          </div>
+          <div class="menu-button" style="color: #161c24;" onclick="toggleMenu()">☰</div>
+          <div id="side-menu" style="background-color: #161c24;" class="side-menu">
+             <span class="close-button" onclick="toggleMenu()">✖</span>
+              <ul>
+                  <li> 
+                    <a class="phone__number big-p" href="https://www.instagram.com/euro_smartlock/" target="_blank">
+                    Инстаграм
+                  </a>
+                </li>
+                  <li>
+                    <a class="phone__number big-p" href="https://yandex.uz/maps/-/CDTHIO1-" target="_blank">
+                      Наш адрес
+                    </a>
+                  </li>
+                  <li>
+                    <a class="phone__number big-p" href="tel:+79665588499">
+                      Контакты
+                    </a>
+                  </li>
+              </ul>
+          </div>
+          </div>
+        
+        </div>
+      </div>
+    </header>
+    <section class="bottom__header container">
+      <div class="big-p" onclick="selectOption('Macbook')">Macbook</div>
+      <div class="big-p" onclick="selectOption('Смартфоны')">Смартфоны</div>
+      <div class="big-p" onclick="selectOption('Аксессуары')">Аксессуары</div>
+      <div class="big-p" onclick="selectOption('Наушники')">Наушники</div>
+      <div class="big-p" onclick="selectOption('Часы')">Часы</div>
+      <div class="big-p" onclick="selectOption('Зарядные устройства')">Зарядные устройства</div>
+      <div class="big-p" onclick="selectOption('Сувениры')">Сувениры</div>
+      <div class="big-p" onclick="selectOption('Airpods')">Airpods</div>
+      <div class="big-p" onclick="selectOption('Кнопочные телефоны')">Кнопочные телефоны</div>
+      <div class="big-p" onclick="selectOption('Проекторы')">Проекторы</div>
+      <div class="big-p" onclick="selectOption('Игровые аксессуары')">Игровые аксессуары</div>
+    </section>  
+     <section class="single__product">
+      <div class="container">
+        <div class="single__product_box"></div>
+    <template id="single__product_template">
+      <div class="single__block">
+        <img class="single__img" src="" alt="">
+        <div class="single__content_box">
+          <p class="single__product_avaible"><span>В продаже:</span>  <span>штук</span></p>
+          <h1 class="single__title"></h1>
+          <p class="single__text"></p>
+          <span class="single__span">Narxi:</span>
+          <div class="single__price_box">
+            <h2 class="single__new_price"><span>so'm</span></h2>
+            <h2 class="single__old_price"><span>so'm</span></h2>
+          </div>
+        <div class="order__box">
+          <button type="button" class="single__add_basket" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Оформить заказ
+          </button>
+          <div class="quantity-controls">
+            <button class="minus">-</button>
+            <input type="tel" id="quantity" value="1" min="1">
+            <button class="plus">+</button>
+        </div>
+        </div>
+          
+        </div>
+        <img class="single__img2" src="" alt="">
+      </div>
+    </template>
+      </div>
+     </section>
+     <section class="product__order" id="productorder">
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Сделайте заказ, и наш продавец вам позвонит</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="https://formspree.io/f/xjkvbyel" method="post">
+          <input 
+          type="hidden"
+          id="product__order_number"
+          name="Количество"
+          required
+          >
+          <label for="name"
+          >Название товара</label
+        >
+        <input
+          type="text"
+          id="product__input_title"
+          name="товар"
+          required
+          readonly
+        />
+          <label for="name"
+            >Ваше имя</label
+          >
+          <input
+            placeholder="Ваше имя"
+            type="text"
+            id="name"
+            name="имя"
+            required
+          />
+          <label for="phone"
+            >Ваш номер телефона</label
+          >
+          <input
+            placeholder="номер телефона"
+            type="tel"
+            id="phone"
+            name="номер телефона"
+            pattern="[0-9]*" 
+            inputmode="numeric" 
+            maxlength="17"
+            required
+          />
+          <button
+            style="margin-bottom: 20px"
+            class="form-button"
+            type="submit"
+          >
+          Отправить
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+     </section>
+     <footer class="footer">
+      <div class="container">
+        <div class="footer__block">
+          <div class="footer__logo_box">
+            <a href="./index.html"><img class="logo2" src="./img/logo-footer.png" alt="img" /></a>
+            <ul class="footer__list_icon">
+              <li class="icon__item">
+                <a href="https://t.me/EURO_Smart_lock"><img src="./img/telegram.png" alt="img" /></a>
+              </li>
+              <li class="icon__item">
+               <a href="https://www.instagram.com/euro_smartlock?igsh=MXFidjlhOXRtZWMweQ=="> <img src="./img/instagram.png" alt="img" /></a>
+              </li>
+              <li class="icon__item">
+              <a href="https://www.facebook.com/profile.php?id=61566172770766&mibextid=ZbWKwL"><img src="./img/facebook.png" alt="img" /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="list__block2">
+            <div class="footer__list_box">
+              <h4 class="footer__list_title">Навигация</h4>
+              <ul class="footer__list">
+                <li class="footer__list_item">
+                  <a class="footer__list_link" href="">Главная</a>
+                </li>
+                <li class="footer__list_item">
+                  <a class="footer__list_link" href="">Каталог</a>
+                </li>
+                <li class="footer__list_item">
+                  <a class="footer__list_link" href="">Оптовая продажа</a>
+                </li>
+                <li class="footer__list_item">
+                  <a class="footer__list_link" href="">О нас</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__list_box">
+              <h4 class="footer__list_title">Наши контакты</h4>
+              <ul class="footer__list">
+                <li class="footer__list_item">
+                  <span class="footer__list_span">Телефоны</span>
+                  <a class="footer__list_link" href="tel:+998909447240"
+                    >+998 90 944 72 40</a
+                  >
+                </li>
+                <li class="footer__list_item">
+                  <span class="footer__list_span">Email</span>
+                  <a class="footer__list_link" href="">eurosmartlock@mail.ru</a>
+                  <a class="footer__list_link" href="">smartlock@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__list_box">
+              <h4 class="footer__list_title">Наш адрес</h4>
+              <ul class="footer__list">
+                <li class="footer__list_item">
+                  <a class="footer__list_link" href="">
+                    Tirsakobod mahalla, Chilonzor . Tashkent
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__list_box">
+              <h4 class="footer__list_title">информация</h4>
+              <ul class="footer__list">
+                <li class="footer__list_item">
+                  <a class="footer__list_link" href="#">Доставка и оплата</a>
+                </li>
+                <li class="footer__list_item">
+                  <a class="footer__list_link" href="#">Гарантии</a>
+                </li>
+                <li class="footer__list_item">
+                  <a class="footer__list_link" href="#">Возврат товара</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr style="border: 1px solid #fff; opacity: 0.08" />
+      <p class="footer__bottom_text">© 2021 Golden Soft All rights reserved.</p>
+    </footer>
+    <script type="module" src="./js/single.js"></script>
+    <script src="./js/animated.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

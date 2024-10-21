@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title class="main__title">Euro Smart lock</title>
+    <link
+      class="title__img"
+      rel="icon"
+      href="./img/title-logo.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/scrollify.css">
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <section class="img__content" >
+      <div class="container">
+        <div class="header__top_block">
+        
+          <a class="header__top_link" href="./single.html">Обратный звонок</a>
+        </div>
+        <div class="header__box">
+          <div class="logo__box">
+            <a class="logo" href="./index.html"></a>
+            <input
+              class="header__input"
+              id="search-input"
+              type="text"
+              autocomplete="off"
+              placeholder="Поиск продуктов и категорий"
+            />
+          </div>
+          <div class="header__btn_box" id="menu">
+            <a
+              class="phone__number big-p"
+              href="https://www.instagram.com/euro_smartlock/"
+              target="_blank"
+            >
+              Инстаграм
+            </a>
+            <a
+              class="phone__number big-p"
+              href="https://yandex.uz/maps/-/CDTHIO1-"
+              target="_blank"
+            >
+              Наш адрес
+            </a>
+            <a class="phone__number big-p" href="tel:+998909447240">
+              Контакты
+            </a>
+          </div>
+          <div class="menu-button" onclick="toggleMenu()">☰</div>
+          <div id="side-menu" class="side-menu">
+            <span class="close-button" onclick="toggleMenu()">✖</span>
+            <ul>
+              <li>
+                <a
+                  class="phone__number big-p"
+                  href="https://www.instagram.com/euro_smartlock/"
+                  target="_blank"
+                >
+                  Инстаграм
+                </a>
+              </li>
+              <li>
+                <a
+                  class="phone__number big-p"
+                  href="https://yandex.uz/maps/-/CDTHIO1-"
+                  target="_blank"
+                >
+                  Наш адрес
+                </a>
+              </li>
+              <li>
+                <a class="phone__number big-p" href="tel:+79665588499">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hero__block">
+          <img class="hero__img" src="./img/hero-img.png" alt="img" />
+          <div class="hero__text_box">
+            <div class="hero__title_box">
+              <h1 class="hero__title">EURO</h1>
+              <h1 class="hero__span">SMART LOCK</h1>
+            </div>
+
+            <p class="hero__text">
+              это современный умный замок с дистанционным управлением и высоким
+              уровнем безопасности.
+            </p>
+            <button
+            type="button"
+            class="btn-primary2"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+            3D-обзор умного замка
+          </button>
+          </div>
+        </div>
+        <h1 class="slider__title">Вы недавно просмотрели</h1>
+        <div class="swiper">
+          <div class="slider__title_box">
+            <div class="swiper__btn_box">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+          <div class="swiper-wrapper"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- Button trigger modal -->
+      
+      </div>
+     
+
+   
+    </section>
+   
+    <section class="list__content scroll-transition container" id="content_product">
+      <h1 class="content__title">Полное описание товара></h1>
+      <div class="list__block">
+        <template id="template">
+          <div class="list__box">
+            <div class="img__block">
+              <a href="./single.html">
+                <img
+                  class="list__content_img"
+                  src="https://images.uzum.uz/cokjfi70sttt9lm500rg/t_product_540_high.jpg#1722365568094"
+                  alt=""
+                />
+              </a>
+              <span class="top__img_text">акция</span>
+            </div>
+            <div class="title__box">
+              <p class="content__list_title"></p>
+              <div class="price__box">
+                <p class="price__old_text">
+                  <span class="price__old">$50.00</span>сум
+                </p>
+                <p class="price__new_text">
+                  <span class="price__new">$30.00</span>сум
+                </p>
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
+      <button id="more-btn" class="more-btn" style="display: block">
+        Показать еще 4
+      </button>
+      <button id="less-btn" style="display: none" class="more-btn">
+        Вернуть в исходное состояние
+      </button>
+    </section>
+    <section class="about__product">
+      <div class="container">
+        <div class="about__block">
+          <div class="about__box">
+            <div class="about__text_block">
+              <h2 class="about__title">Euro Smart lock.</h2>
+              <p class="about__text">
+                - Умные замки представляют собой инновационное решение в области
+                домашней безопасности. Эти современные устройства предназначены
+                для упрощения управления доступом к вашему дому и обеспечения
+                высокого уровня безопасности. Они могут заменить обычные ключи
+                на более удобные методы, такие как смартфон или пин-коды, что
+                устраняет риски потери или кражи ключей.
+              </p>
+            </div>
+            <img class="about__img" src="./img/about-img.jpg" alt="" />
+          </div>
+          <div class="about__box">
+            <div class="about__text_block">
+              <h2 class="about__title">Euro Smart lock.</h2>
+              <p class="about__text">
+                - Умные замки представляют собой инновационное решение в области
+                домашней безопасности. Эти современные устройства предназначены
+                для упрощения управления доступом к вашему дому и обеспечения
+                высокого уровня безопасности. Они могут заменить обычные ключи
+                на более удобные методы, такие как смартфон или пин-коды, что
+                устраняет риски потери или кражи ключей.
+              </p>
+            </div>
+            <img class="about__img" src="./img/about-img2.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="Inputs__section">
+      <div class="container">
+        <div class="inputs__block">
+          <h1 class="inputs__title">Мы Вам перезвоним</h1>
+          <p class="inputs__text">
+            Если у вас возникли какие-то вопросы или проблемы, заполните форму и
+            мы Вам перезвоним.
+          </p>
+          <div class="main__inpust_box">
+            <input class="main__input" type="text" placeholder="Ваше имя" />
+            <input class="main__input" type="text" placeholder="Ваш Email" />
+            <button class="input__btn">Отправить</button>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__block">
+          <div class="footer__logo_box">
+            <a href="./index.html"
+              ><img class="logo2" src="./img/logo-footer.png" alt="img"
+            /></a>
+            <ul class="footer__list_icon">
+              <li class="icon__item">
+                <a href="https://t.me/EURO_Smart_lock"
+                  ><img src="./img/telegram.png" alt="img"
+                /></a>
+              </li>
+              <li class="icon__item">
+                <a
+                  href="https://www.instagram.com/euro_smartlock?igsh=MXFidjlhOXRtZWMweQ=="
+                >
+                  <img src="./img/instagram.png" alt="img"
+                /></a>
+              </li>
+              <li class="icon__item">
+                <a
+                  href="https://www.facebook.com/profile.php?id=61566172770766&mibextid=ZbWKwL"
+                  ><img src="./img/facebook.png" alt="img"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="list__block2">
+            <div class="footer__list_box">
+              <h4 class="footer__list_title">Навигация</h4>
+              <ul class="footer__list">
+                <li class="footer__list_item">
+                  <a class="footer__list_link" href="">Главная</a>
+                </li>
+                <li class="footer__list_item">
+                  <a class="footer__list_link" href="">Каталог</a>
+                </li>
+                <li class="footer__list_item">
+                  <a class="footer__list_link" href="">Оптовая продажа</a>
+                </li>
+                <li class="footer__list_item">
+                  <a class="footer__list_link" href="">О нас</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__list_box">
+              <h4 class="footer__list_title">Наши контакты</h4>
+              <ul class="footer__list">
+                <li class="footer__list_item">
+                  <span class="footer__list_span">Телефоны</span>
+                  <a class="footer__list_link" href="tel:+998909447240"
+                    >+998 90 944 72 40</a
+                  >
+                </li>
+                <li class="footer__list_item">
+                  <span class="footer__list_span">Email</span>
+                  <a class="footer__list_link" href="">eurosmartlock@mail.ru</a>
+                  <a class="footer__list_link" href="">smartlock@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__list_box">
+              <h4 class="footer__list_title">Наш адрес</h4>
+              <ul class="footer__list">
+                <li class="footer__list_item">
+                  <a class="footer__list_link" href="">
+                    Tirsakobod mahalla, Chilonzor . Tashkent
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__list_box">
+              <h4 class="footer__list_title">информация</h4>
+              <ul class="footer__list">
+                <li class="footer__list_item">
+                  <a class="footer__list_link" href="#">Доставка и оплата</a>
+                </li>
+                <li class="footer__list_item">
+                  <a class="footer__list_link" href="#">Гарантии</a>
+                </li>
+                <li class="footer__list_item">
+                  <a class="footer__list_link" href="#">Возврат товара</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr style="border: 1px solid #fff; opacity: 0.08" />
+      <p class="footer__bottom_text">© 2021 Golden Soft All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./js/slider.js"></script>
+    <script type="module" src="./js/script.js"></script>
+    <script src="./js/animated.js"></script>
+    <script>
+window.onload = function() {
+    const toast = document.getElementById('myToast');
+    const closeToast = document.getElementById('closeToast');
+
+    // Toastni ko'rsatish
+    toast.style.opacity = 1; 
+
+    // 5 soniyadan keyin yashirish
+    setTimeout(() => {
+        toast.style.opacity = 0; 
+    }, 5000);
+
+    // Yopish tugmasini bosganda
+    closeToast.onclick = function() {
+        toast.style.display = "none"; 
+    };
+};
+    </script>
+  </body>
+</html>
+<div
+class="modal fade"
+id="staticBackdrop"
+data-bs-backdrop="static"
+data-bs-keyboard="false"
+tabindex="-1"
+aria-labelledby="staticBackdropLabel"
+aria-hidden="true"
+>
+<div class="modal-dialog">
+  <div class="modal-content" style="background-color: #002740">
+    <div class="modal-header">
+      <h1
+        class="modal-title fs-5"
+        id="staticBackdropLabel"
+        style="color: #fff"
+      >
+        3D-обзор умного замка
+      </h1>
+    </div>
+    <div class="modal-body">
+      <div class="sketchfab-embed-wrapper">
+        <iframe
+          style="width: 100%"
+          title="Large Digital Lock"
+          frameborder="0"
+          allowfullscreen
+          mozallowfullscreen="true"
+          webkitallowfullscreen="true"
+          allow="autoplay; fullscreen; xr-spatial-tracking"
+          xr-spatial-tracking
+          execution-while-out-of-viewport
+          execution-while-not-rendered
+          web-share
+          height="400"
+          src="https://sketchfab.com/models/0f08b263fc1c406c99f0e14d47ff9618/embed"
+        ></iframe>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button
+        type="button"
+        class="btn btn-secondary"
+        data-bs-dismiss="modal"
+      >
+        Закрыть
+      </button>
+    </div>
+  </div>
+</div>
+</div>
+<div class="toast" id="myToast" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-header">
+    <small>11 mins ago</small>
+    <button type="button" id="closeToast" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+  <div class="toast-body">
+    Успейте купить со скидкой до 25 января 2025 года!
+  </div>
+</div>

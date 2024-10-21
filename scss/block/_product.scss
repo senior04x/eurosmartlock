@@ -1,0 +1,157 @@
+.list__content {
+  padding: 50px 100px 50px 100px;
+}
+.content__title{
+  font-weight: 600;
+font-size: 28px;
+line-height: 150%;
+color: #000;
+margin-bottom: 32px;
+}
+.list__block {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* 4 ta ustun yaratish */
+  gap: 22px; /* Ustunlar o'rtasidagi bo'sh joy */
+}
+
+.list__box {
+  width: 100%; /* Ustunning to'liq kengligini olish */
+  box-shadow: inset -1px 0 0 0 #eaeaea, inset 1px 0 0 0 #eaeaea, inset 0 -1px 0 0 #eaeaea;
+  margin-bottom: 20px; /* Pastdagi bo'sh joy */
+}
+
+
+.img__block {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  &:hover {
+    border-radius: 0;
+    transition: 0.7s;
+  }
+}
+.list__content_img{
+ max-width: 100%;
+  height: 400px;
+}
+.img__block:hover .list__content_img {
+  transform: scale(1.05);
+}
+.list__content_img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+  transform-origin: center;
+}
+.top__img_text {
+  cursor: pointer;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  padding: 2px 5px;
+  margin: 0;
+  background-color: #fff;
+  color: #000;
+  font-size: 12px;
+  font-weight: 700;
+}
+.title__box {
+  padding: 10px;
+  // border-right: 1px solid #fff;
+  // border-left: 1px solid #fff;
+  // border-bottom: 1px solid #fff;
+}
+.content__list_title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #454f5b;
+  font-size: 18px;
+}
+.price__old_text{
+  text-decoration: line-through;
+  font-size: 11.2px;
+  color: #969697;
+}
+.price__new_text {
+  font-size: 15px;
+  display: flex;
+  gap: 5px;
+  font-weight: 600;
+}
+
+.more-btn {
+  display: block;
+  background-color: transparent;
+  color: #000;
+  font-weight: 400;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 0;
+  border: 1px solid #454f5b;
+  transition: 0.5s;
+  &:hover {
+    background-color: #343b44;
+    color: #fff;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .list__content {
+    padding: 20px 10px; /* Kichik ekranda qulay padding */
+  }
+  .content__title{
+    font-size: 15px;
+  }
+  .list__block {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 2fr)); /* 2 qatorli layout */
+    gap: 10px; /* Elementlar orasida bo'sh joy */
+  }
+
+  .list__box {
+    margin-bottom: 20px; /* Pastki bo'sh joy */
+  }
+
+  .list__box img {
+    width: 100%; /* Rasmni konteynerga moslashtirdim */
+    height: auto; /* Proportsiyani saqlash uchun */
+  }
+
+  .more-btn {
+    width: 100%;
+    padding: 8px; /* Tugmaga ko'proq joy berdim */
+    font-size: 12px;
+    font-weight: 400; /* Matnni kattalashtirdim */
+  }
+}
+
+
+@keyframes flyInFromBottom {
+  0% {
+    transform: translateY(40px); /* Pastdan kiradi */
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0); /* O'z joyiga qaytadi */
+    opacity: 1;
+  }
+}
+
+.list__box {
+  opacity: 0; /* Dastlab ko'rinmaydi */
+  transform: translateY(40px); /* Pastdan kiradi */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.list__box.show {
+  opacity: 1; /* Ko'rinadigan bo'ladi */
+  animation: flyInFromBottom 1s ease-out forwards; /* Pastdan sekin paydo bo'ladi */
+}
+
+
+

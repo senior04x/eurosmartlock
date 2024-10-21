@@ -1,0 +1,157 @@
+.img__content {
+  margin-bottom: 30px;
+  // padding: 0 100px;
+  background-color: #f2f8ff;
+  padding-bottom: 80px;
+}
+.slider__title_box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+.slider__title {
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 141%;
+  color: #161c24;
+}
+
+.swiper-button-prev {
+  position: relative;
+}
+
+.swiper-button-prev:after {
+  content: url("../../img/swiper-button-left.svg");
+}
+
+.swiper-button-next {
+  position: relative;
+}
+
+.swiper-button-next:after {
+  content: url("../../img/swiper-button-right.svg");
+}
+
+.swiper-pagination-bullet-active {
+  background: #ffffff99;
+}
+
+.swiper__btn_box {
+  display: flex;
+  gap: 50px;
+  margin-right: 70px;
+}
+.btn-primary2{
+  margin-top: 60px;
+  border-radius: 0;
+  background-color: transparent;
+  outline: none;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  padding: 0;
+  font-size: 14px;
+}
+.btn-secondary{
+  background-color: transparent;
+  color: #fff;
+  border-radius: 0;
+  font-weight: 700;
+}
+@media (max-width: 450px) {
+  .img__content{
+    // padding: 0 10px;
+    background-image: url("../../img/sss.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+   }
+   .img__content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Qoraytirish (0.5 = 50%) */
+    backdrop-filter: blur(10px); /* Blur effekti */
+    z-index: -1; /* Orqa fonda turishi uchun */
+  }
+  .slider__title_box {
+    margin-bottom: 20px;
+  }
+
+  .slider__title {
+    margin-top: 30px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 141%;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    display: none;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none; /* Mobil versiyada tugmalarni yashirish */
+  }
+  .swiper-pagination{
+    display: none;
+  }
+  .swiper {
+    width: 100%; /* Slayder kengligini 100% qilib belgilash */
+    padding: 0; /* Agar kerak bo'lsa, padding ni olib tashlang */
+    padding: 0 40px;
+    display: none;
+  }
+
+  .swiper-slide {
+    width: auto; /* Slayd kengligini avtomatik belgilash */
+    flex-shrink: 0; /* Slaydlarning bir-biriga nisbatan joylashuvini belgilash */
+    // box-shadow: 20px 20px 10px #454f5b8d; /* Soya effekti */
+    // border-radius: 8px; /* Burchaklarni yumaloqlash (ixtiyoriy) */
+    position: relative;
+  }
+
+  .list__content_img_slide {
+    width: 100%; /* Rasm kengligini 100% qilib belgilash */
+    height: auto; /* Rasm balandligi avtomatik */
+  }
+  .project-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #454f5bb5;
+    color: #fff;
+    padding: 20px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .swiper-slide:hover .project-overlay {
+    display: block;
+    opacity: 1;
+  }
+}
+.swiper-slide {
+  position: relative;
+}
+.project-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #454f5bb5;
+  color: #fff;
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide:hover .project-overlay {
+  transform: translateY(0);
+}

@@ -1,0 +1,94 @@
+.Inputs__section {
+    padding: 64px 346px 56px 346px;
+    background-color: #f2f8ff;
+    align-items: center;
+  }
+  .inputs__block {
+    max-width: 748px;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .inputs__title {
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 141%;
+    text-align: center;
+    color: #161c24;
+    margin-bottom: 24px;
+  }
+  .inputs__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    text-align: center;
+    color: #454f5b;
+    margin-bottom: 24px;
+    width: 518px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main__inpust_box {
+    display: flex;
+    gap: 24px;
+  }
+  .main__input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: #454f5b;
+  }
+  .main__input:focus {
+    border: 2px solid #4295e4;
+  }
+  .main__input {
+    width: 240px;
+    height: 50px;
+    background: rgba(22, 28, 36, 0.04);
+    padding: 12px 16px;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: #454f5b;
+  }
+  .input__btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 162%;
+    color: #fff;
+    padding: 12px 70px;
+    background-color: #4295e4;
+    border: none;
+  }
+
+  @media (max-width:768px){
+    .Inputs__section{
+        padding: 20px 10px;
+    }
+  .inputs__block {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .inputs__title{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+  }
+  .inputs__text{
+    font-size: 12px;
+  }
+  .main__inpust_box{
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .main__input{
+    width: 100%;
+  }
+  .input__btn{
+    width: 100%;
+  }
+  }
