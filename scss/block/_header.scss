@@ -147,6 +147,53 @@
 .menu-button {
   display: none;
 }
+.notification {
+  position: fixed;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 400px;
+  padding: 15px;
+  background-color: #ffffff81;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: top 0.3s ease-in-out;
+  display: none;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.notification-content {
+  text-align: center;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.notification-content img {
+  width: 40px;
+}
+.notification-box{
+  text-align: start;
+}
+.notification.show {
+  top: 20px;
+}
+
+.notification.hide {
+  top: -100px;
+}
+
+/* Add swipe up gesture */
+@keyframes swipeUp {
+  from {
+      top: 20px;
+  }
+  to {
+      top: -100px;
+  }
+}
 
 @media (max-width: 450px) {
 
@@ -199,4 +246,14 @@
   .menu-button {
     display: block;
   }
+  .toast{
+    max-width: 200px;
+  }
+  .toast-header small{
+    font-size: 8px;
+  }
+  .notification{
+    display: flex;
+  }
 }
+

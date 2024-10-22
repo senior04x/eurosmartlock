@@ -24,11 +24,10 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <section class="img__content" >
+    <section class="img__content">
       <div class="container">
         <div class="header__top_block">
-        
-          <a class="header__top_link" href="./single.html">Обратный звонок</a>
+           <a class="header__top_link" href="./single.html">Обратный звонок</a>
         </div>
         <div class="header__box">
           <div class="logo__box">
@@ -90,6 +89,7 @@
             </ul>
           </div>
         </div>
+
         <div class="hero__block">
           <img class="hero__img" src="./img/hero-img.png" alt="img" />
           <div class="hero__text_box">
@@ -318,25 +318,7 @@
     <script type="module" src="./js/slider.js"></script>
     <script type="module" src="./js/script.js"></script>
     <script src="./js/animated.js"></script>
-    <script>
-window.onload = function() {
-    const toast = document.getElementById('myToast');
-    const closeToast = document.getElementById('closeToast');
-
-    // Toastni ko'rsatish
-    toast.style.opacity = 1; 
-
-    // 5 soniyadan keyin yashirish
-    setTimeout(() => {
-        toast.style.opacity = 0; 
-    }, 5000);
-
-    // Yopish tugmasini bosganda
-    closeToast.onclick = function() {
-        toast.style.display = "none"; 
-    };
-};
-    </script>
+   
   </body>
 </html>
 <div
@@ -390,12 +372,16 @@ aria-hidden="true"
   </div>
 </div>
 </div>
-<div class="toast" id="myToast" role="alert" aria-live="assertive" aria-atomic="true">
-  <div class="toast-header">
-    <small>сейчас</small>
-    <button type="button" id="closeToast" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+<div id="notification" class="notification">
+  <div class="notification-content">
+    <img src="./img/iphonemesseg.png" alt="img">
+     <div class="notification-box">
+      <strong>Euro smart lock</strong>
+      <p>Пользуйтесь акцией до 2025 года</p>
+     </div>
   </div>
-  <div class="toast-body">
-    Успейте купить со скидкой до 25 января 2025 года!
-  </div>
+  <audio id="notificationSound" src="./audio/iphonemp3.mp3"></audio>
 </div>
+
+<script src="./js/notificition.js"></script>
+
