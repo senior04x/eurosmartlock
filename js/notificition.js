@@ -21,7 +21,7 @@ function showNotification() {
   // Hide the notification after 3 seconds
   setTimeout(() => {
       hideNotification();
-  }, 5000);
+  }, 3500);
 
   // Allow swiping up to remove the notification
   notification.addEventListener('touchstart', handleSwipe);
