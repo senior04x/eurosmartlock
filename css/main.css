@@ -285,6 +285,11 @@ h1, h2, h3, h4, p {
 
 .menu-button {
   display: none;
+  background-image: url("../../img/Menu-button.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 16px;
 }
 
 .notification {
@@ -443,20 +448,29 @@ h1, h2, h3, h4, p {
     display: -ms-flexbox;
     display: flex;
   }
+  .big-p::after {
+    background-color: #fff;
+  }
+  .big-p:hover {
+    color: #fff;
+  }
+  .big-p {
+    color: #fff;
+  }
 }
 .menu-button {
-  font-size: 30px;
-  cursor: pointer;
   background-color: transparent;
-  color: #fff;
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 
 .side-menu {
   width: 250px;
-  height: 100%;
-  background-color: #002740;
+  height: 100vh;
+  background-image: url("../../img/sss.jpg");
+  background: rgba(0, 0, 0, 0.5); /* Qoraytirish (0.5 = 50%) */
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px); /* Blur effekti */
   position: fixed;
   top: 0;
   right: -250px;
@@ -469,7 +483,7 @@ h1, h2, h3, h4, p {
 
 .side-menu ul {
   list-style: none;
-  padding: 50px 20px;
+  padding: 70px 20px;
 }
 
 .side-menu ul li {
@@ -477,6 +491,7 @@ h1, h2, h3, h4, p {
 }
 
 .side-menu ul li a {
+  width: 60%;
   color: #fff;
   text-decoration: none;
   font-size: 20px;
@@ -493,21 +508,29 @@ h1, h2, h3, h4, p {
 }
 
 .close-button {
-  font-size: 25px;
-  color: #fff;
+  width: 20px;
+  height: 20px;
   position: absolute;
-  top: 30px;
+  top: 50px;
   right: 30px;
-  cursor: pointer;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-  content: url("../../img/close-btn.svg");
+  content: url("../../img/close-button.png");
+  background-color: transparent;
 }
 
-.close-button:hover {
-  color: #f4f4f4;
+.menu-button-single {
+  display: none;
+  background-image: url("../../img/Menu-button-single.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 16px;
 }
 
+@media (max-width: 450px) {
+  .menu-button-single {
+    display: block;
+  }
+}
 .hero__block {
   display: none;
 }

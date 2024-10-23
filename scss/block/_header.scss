@@ -146,6 +146,11 @@
 }
 .menu-button {
   display: none;
+  background-image: url("../../img/Menu-button.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 16px;
 }
 .notification {
   position: absolute;
@@ -271,6 +276,15 @@
   }
   .notification{
     display: flex;
+  }
+  .big-p::after{
+   background-color: #fff;
+  }
+  .big-p:hover{
+    color: #fff;
+  }
+  .big-p{
+    color: #fff;
   }
 }
 
