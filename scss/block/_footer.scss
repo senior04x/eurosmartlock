@@ -1,6 +1,7 @@
 .footer {
     background-color: #0d2436;
     padding: 55px 81px 25px 100px;
+    position: relative;
   }
   .footer__block {
     display: flex;
@@ -66,6 +67,14 @@
     width: 30px;
     height: 30px;
   }
+  .footer__small{
+    position: absolute;
+    color: #fff;
+    font-size: 8px;
+    right: 10px;
+    bottom: 10px;
+    opacity: 0.5;
+  }
   @media (max-width:768px){
     .footer{
         padding: 20px 30px;
@@ -84,5 +93,8 @@
     }
     .footer__list_box{
         display: none;
+    }
+    .footer__small{
+      font-size: 4px;
     }
   }

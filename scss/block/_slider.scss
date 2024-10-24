@@ -9,7 +9,10 @@
   justify-content: space-between;
   margin-bottom: 64px;
 }
-
+.swiper {
+  width: 600px;
+  height: auto;
+}
 .slider__title {
   font-weight: 400;
   font-size: 44px;
@@ -58,6 +61,7 @@
   border-radius: 0;
   font-weight: 700;
 }
+
 @media (max-width: 450px) {
   .img__content{
     // padding: 0 10px;
@@ -104,7 +108,7 @@
     width: 100%; /* Slayder kengligini 100% qilib belgilash */
     padding: 0; /* Agar kerak bo'lsa, padding ni olib tashlang */
     padding: 0 40px;
-    display: none;
+    display: block;
   }
 
   .swiper-slide {
@@ -136,6 +140,8 @@
     display: block;
     opacity: 1;
   }
+
+  
 }
 .swiper-slide {
   position: relative;

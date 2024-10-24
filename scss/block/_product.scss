@@ -46,8 +46,8 @@ margin-bottom: 32px;
 .top__img_text {
   cursor: pointer;
   position: absolute;
-  bottom: 5px;
-  left: 5px;
+  bottom: 6px;
+  left: 6px;
   padding: 2px 5px;
   margin: 0;
   background-color: #fff;
@@ -65,42 +65,27 @@ margin-bottom: 32px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: #454f5b;
+  color: #000;
   font-size: 18px;
 }
 .price__old_text{
   text-decoration: line-through;
   font-size: 11.2px;
-  color: #969697;
+  color: #000;
 }
 .price__new_text {
   font-size: 15px;
   display: flex;
   gap: 5px;
   font-weight: 600;
-}
-
-.more-btn {
-  display: block;
-  background-color: transparent;
   color: #000;
-  font-weight: 400;
-  width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  padding: 10px;
-  border-radius: 0;
-  border: 1px solid #454f5b;
-  transition: 0.5s;
-  &:hover {
-    background-color: #343b44;
-    color: #fff;
-    border-radius: 5px;
-  }
 }
-
-@media (max-width: 768px) {
+.price__box{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+@media (max-width: 450px) {
   .list__content {
     padding: 20px 10px; /* Kichik ekranda qulay padding */
   }
@@ -111,23 +96,53 @@ margin-bottom: 32px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 2fr)); /* 2 qatorli layout */
     gap: 10px; /* Elementlar orasida bo'sh joy */
+    padding: 10px;
   }
 
   .list__box {
     margin-bottom: 20px; /* Pastki bo'sh joy */
+    background-image: url("../../img/sss.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
   }
-
+.list__box::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Qoraytirish (0.5 = 50%) */
+  backdrop-filter: blur(10px); /* Blur effekti */
+  z-index: -1; /* Orqa fonda turishi uchun */
+}
   .list__box img {
     width: 100%; /* Rasmni konteynerga moslashtirdim */
     height: auto; /* Proportsiyani saqlash uchun */
   }
+.img__block{
+// padding: 5px;
+}
+.top__img_text{
+  background-color: #f1f1f193;
+  backdrop-filter: blur(2px);
+  color: #fff;
+}
+.content__list_title{
+  color: #fff;
+  font-size: 24px;
+}
 
-  .more-btn {
-    width: 100%;
-    padding: 8px; /* Tugmaga ko'proq joy berdim */
-    font-size: 12px;
-    font-weight: 400; /* Matnni kattalashtirdim */
-  }
+.price__old_text{
+color: #fff;
+font-size: 12px;
+}
+.price__new_text{
+  color: #fff;
+  font-size: 20px;
+}
 }
 
 

@@ -61,7 +61,7 @@
           </div>
           <div class="menu-button" onclick="toggleMenu()"></div>
           <div id="side-menu" class="side-menu">
-            <span class="close-button" onclick="toggleMenu()">✖</span>
+            <span class="close-button" onclick="toggleMenu()"></span>
             <ul>
               <li>
                 <a
@@ -102,37 +102,17 @@
               это современный умный замок с дистанционным управлением и высоким
               уровнем безопасности.
             </p>
-            <button
-            type="button"
-            class="btn-primary2"
-            data-bs-toggle="modal"
-            data-bs-target="#staticBackdrop"
-          >
-            3D-обзор умного замка
-          </button>
+           
+       <a class="btn-primary2" href="#content_product">
+        Как заказать?
+       </a>
           </div>
         </div>
-        <h1 class="slider__title">Вы недавно просмотрели</h1>
-        <div class="swiper">
-          <div class="slider__title_box">
-            <div class="swiper__btn_box">
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-            </div>
-          </div>
-          <div class="swiper-wrapper"></div>
-          <div class="swiper-pagination"></div>
-        </div>
-        <!-- Button trigger modal -->
-      
       </div>
-     
-
-   
-    </section>
+   </section>
    
     <section class="list__content scroll-transition container" id="content_product">
-      <h1 class="content__title">Полное описание товара></h1>
+      <h1 class="content__title">Нажмите на продукт</h1>
       <div class="list__block">
         <template id="template">
           <div class="list__box">
@@ -149,18 +129,19 @@
             <div class="title__box">
               <p class="content__list_title"></p>
               <div class="price__box">
-                <p class="price__old_text">
-                  <span class="price__old">$50.00</span>сум
-                </p>
                 <p class="price__new_text">
-                  <span class="price__new">$30.00</span>сум
+                  <span class="price__new">$30.00</span>$
                 </p>
+                <p class="price__old_text">
+                  <span class="price__old">$50.00</span>$
+                </p>
+               
               </div>
             </div>
           </div>
         </template>
       </div>
-      <button id="more-btn" class="more-btn" style="display: block">
+      <button id="more-btn" class="more-btn" style="display: none">
         Показать еще 4
       </button>
       <button id="less-btn" style="display: none" class="more-btn">
@@ -169,54 +150,27 @@
     </section>
     <section class="about__product">
       <div class="container">
-        <div class="about__block">
-          <div class="about__box">
-            <div class="about__text_block">
-              <h2 class="about__title">Euro Smart lock.</h2>
-              <p class="about__text">
-                - Умные замки представляют собой инновационное решение в области
-                домашней безопасности. Эти современные устройства предназначены
-                для упрощения управления доступом к вашему дому и обеспечения
-                высокого уровня безопасности. Они могут заменить обычные ключи
-                на более удобные методы, такие как смартфон или пин-коды, что
-                устраняет риски потери или кражи ключей.
-              </p>
-            </div>
-            <img class="about__img" src="./img/about-img.jpg" alt="" />
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="./img/about-img.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/about-img1.png" alt=""></div>
+            <div class="swiper-slide"><img src="./img/about-img2.jpg" alt=""></div>
           </div>
-          <div class="about__box">
-            <div class="about__text_block">
-              <h2 class="about__title">Euro Smart lock.</h2>
-              <p class="about__text">
-                - Умные замки представляют собой инновационное решение в области
-                домашней безопасности. Эти современные устройства предназначены
-                для упрощения управления доступом к вашему дому и обеспечения
-                высокого уровня безопасности. Они могут заменить обычные ключи
-                на более удобные методы, такие как смартфон или пин-коды, что
-                устраняет риски потери или кражи ключей.
-              </p>
-            </div>
-            <img class="about__img" src="./img/about-img2.jpg" alt="" />
-          </div>
+        
         </div>
+        
+        <p class="swiper-text">
+          <strong> Euro Smart lock</strong>- Умные замки представляют собой инновационное решение в области домашней безопасности. 
+
+Эти современные устройства предназначены для упрощения управления доступом к вашему дому и обеспечения высокого уровня безопасности. 
+
+Они могут заменить обычные ключи на более удобные методы, такие как смартфон или пин-коды, что устраняет риски потери или кражи ключей.
+        </p>
       </div>
     </section>
-    <!-- <section class="Inputs__section">
-      <div class="container">
-        <div class="inputs__block">
-          <h1 class="inputs__title">Мы Вам перезвоним</h1>
-          <p class="inputs__text">
-            Если у вас возникли какие-то вопросы или проблемы, заполните форму и
-            мы Вам перезвоним.
-          </p>
-          <div class="main__inpust_box">
-            <input class="main__input" type="text" placeholder="Ваше имя" />
-            <input class="main__input" type="text" placeholder="Ваш Email" />
-            <button class="input__btn">Отправить</button>
-          </div>
-        </div>
-      </div>
-    </section> -->
+   
     <footer class="footer">
       <div class="container">
         <div class="footer__block">
@@ -308,6 +262,7 @@
       </div>
       <hr style="border: 1px solid #fff; opacity: 0.08" />
       <p class="footer__bottom_text">Euro Smart lock company</p>
+      <small class="footer__small">wep site edit by omankuloff</small>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script

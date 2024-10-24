@@ -51,8 +51,8 @@ function renderProducts() {
     elWrapperProducts.appendChild(newTemplate);
   });
 
-  elMoreProductsBtn.style.display = pageCount < 2 ? "block" : "none";
-  elLessProductsBtn.style.display = pageCount > 1 ? "block" : "none";
+  // elMoreProductsBtn.style.display = pageCount < 2 ? "block" : "none";
+  // elLessProductsBtn.style.display = pageCount > 1 ? "block" : "none";
 }
 
 // Qidiruv funksiyasi
@@ -68,13 +68,13 @@ function handleSearch() {
 elSearchInput.addEventListener("input", handleSearch);
 
 // Ko'proq mahsulotlarni ko'rsatish
-elMoreProductsBtn.addEventListener("click", () => {
-  const totalPages = Math.ceil(filteredProducts.length / perPage);
-  if (pageCount < totalPages) {
-    pageCount++;
-    renderProducts();
-  }
-});
+// elMoreProductsBtn.addEventListener("click", () => {
+//   const totalPages = Math.ceil(filteredProducts.length / perPage);
+//   if (pageCount < totalPages) {
+//     pageCount++;
+//     renderProducts();
+//   }
+// });
 
 // Dastlabki holatga qaytarish
 elLessProductsBtn.addEventListener("click", () => {
