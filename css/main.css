@@ -50,22 +50,6 @@ h1, h2, h3, h4, p {
   padding: 0;
 }
 
-.header__top {
-  background-color: #161c24;
-}
-
-.header__top_block {
-  background-color: #161c24;
-  height: 44px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 9px 10px;
-}
-
 .header__top_text {
   font-weight: 500;
   font-size: 16px;
@@ -90,6 +74,7 @@ h1, h2, h3, h4, p {
 }
 
 .header__box {
+  padding-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,15 +88,15 @@ h1, h2, h3, h4, p {
 
 .logo2 {
   width: 120px;
-  height: 80px;
+  height: auto;
 }
 
 .logo {
-  background-image: url("../../img/logo.png");
+  background-image: url("../../img/logo-footer.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 120px;
-  height: 80px;
+  height: 120px;
 }
 
 .logo__box {
@@ -124,11 +109,6 @@ h1, h2, h3, h4, p {
           align-items: center;
 }
 
-.location__text {
-  color: #000;
-  font-size: 12px;
-}
-
 .header__input {
   width: 700px;
   border: none;
@@ -137,7 +117,7 @@ h1, h2, h3, h4, p {
   padding: 5px 10px;
   font-size: 18px;
   background-color: transparent;
-  color: #454f5b;
+  color: #fff;
   -webkit-box-shadow: 0 4px 6px rgba(69, 79, 91, 0.8078431373), 0 2px 4px rgba(69, 79, 91, 0.8078431373);
           box-shadow: 0 4px 6px rgba(69, 79, 91, 0.8078431373), 0 2px 4px rgba(69, 79, 91, 0.8078431373);
   -webkit-transition: -webkit-box-shadow 0.3s ease, -webkit-transform 0.3s ease;
@@ -146,31 +126,31 @@ h1, h2, h3, h4, p {
   transition: box-shadow 0.3s ease, transform 0.3s ease, -webkit-box-shadow 0.3s ease, -webkit-transform 0.3s ease;
 }
 .header__input::-webkit-input-placeholder {
-  color: #000;
+  color: rgba(255, 255, 255, 0.8431372549);
   opacity: 0.7;
   font-size: 18px;
   line-height: 400%;
 }
 .header__input::-moz-placeholder {
-  color: #000;
+  color: rgba(255, 255, 255, 0.8431372549);
   opacity: 0.7;
   font-size: 18px;
   line-height: 400%;
 }
 .header__input:-ms-input-placeholder {
-  color: #000;
+  color: rgba(255, 255, 255, 0.8431372549);
   opacity: 0.7;
   font-size: 18px;
   line-height: 400%;
 }
 .header__input::-ms-input-placeholder {
-  color: #000;
+  color: rgba(255, 255, 255, 0.8431372549);
   opacity: 0.7;
   font-size: 18px;
   line-height: 400%;
 }
 .header__input::placeholder {
-  color: #000;
+  color: rgba(255, 255, 255, 0.8431372549);
   opacity: 0.7;
   font-size: 18px;
   line-height: 400%;
@@ -220,7 +200,7 @@ h1, h2, h3, h4, p {
 .img-p {
   cursor: pointer;
   position: relative;
-  color: #161c24;
+  color: #fff;
   font-weight: 600;
   font-size: 13.5px;
   line-height: 156%;
@@ -250,7 +230,7 @@ h1, h2, h3, h4, p {
   height: 1.5px;
   bottom: -5px;
   left: 0;
-  background-color: #161c24;
+  background-color: #fff;
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
   -webkit-transition: -webkit-transform 0.45s ease-out;
@@ -261,7 +241,7 @@ h1, h2, h3, h4, p {
 
 .img-p,
 .big-p:hover {
-  color: #161c24;
+  color: #fff;
 }
 
 .img-p,
@@ -400,7 +380,7 @@ h1, h2, h3, h4, p {
     padding: 5px 10px;
   }
   .header__box {
-    padding: 0 20px;
+    padding: 20px;
   }
   .logo2 {
     width: 80px;
@@ -532,7 +512,54 @@ h1, h2, h3, h4, p {
   }
 }
 .hero__block {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 150px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__img {
+  width: 350px;
+  height: auto;
+}
+
+.hero__text_box {
+  display: block;
+}
+
+.hero__title_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__title {
+  color: #fff;
+  font-size: 80px;
+  gap: 0;
+}
+
+.hero__span {
+  color: #fff;
+  font-size: 80px;
+}
+
+.hero__text {
+  margin-top: 100px;
+  color: #fff;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 450px) {
@@ -575,6 +602,9 @@ h1, h2, h3, h4, p {
             animation: fadeInText 2s ease-in-out forwards;
     -webkit-animation-delay: 2s;
             animation-delay: 2s;
+  }
+  .hero__title_box {
+    display: block;
   }
   .hero__title {
     color: #fff;
@@ -717,7 +747,7 @@ h1, h2, h3, h4, p {
 }
 
 .btn-primary2 {
-  margin-top: 60px;
+  margin-top: 0;
   border-radius: 0;
   background-color: transparent;
   outline: none;
@@ -734,27 +764,29 @@ h1, h2, h3, h4, p {
   font-weight: 700;
 }
 
+.img__content {
+  background-image: url("../../img/sss.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.img__content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Qoraytirish (0.5 = 50%) */
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px); /* Blur effekti */
+  z-index: -1; /* Orqa fonda turishi uchun */
+}
+
 @media (max-width: 450px) {
-  .img__content {
-    background-image: url("../../img/sss.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    position: relative;
-    z-index: 1;
-  }
-  .img__content::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Qoraytirish (0.5 = 50%) */
-    -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px); /* Blur effekti */
-    z-index: -1; /* Orqa fonda turishi uchun */
-  }
   .slider__title_box {
     margin-bottom: 20px;
   }
@@ -834,6 +866,7 @@ h1, h2, h3, h4, p {
 }
 
 .list__content {
+  height: 100vh;
   padding: 50px 100px 50px 100px;
 }
 
@@ -941,6 +974,10 @@ h1, h2, h3, h4, p {
           align-items: center;
 }
 
+.product__text {
+  margin-top: 30px;
+}
+
 @media (max-width: 450px) {
   .list__content {
     padding: 20px 10px; /* Kichik ekranda qulay padding */
@@ -995,6 +1032,9 @@ h1, h2, h3, h4, p {
   .price__new_text {
     color: #fff;
     font-size: 20px;
+  }
+  .product__text {
+    display: none;
   }
 }
 @-webkit-keyframes flyInFromBottom {

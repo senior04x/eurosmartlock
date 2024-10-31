@@ -1,7 +1,41 @@
 .hero__block {
-    display: none;
+  display: flex;
+  padding: 10px 150px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  gap: 30px;
+  align-items: center;
+}
+  .hero__img{
+    width: 350px;
+    height: auto;
   }
-  
+  .hero__text_box{
+    display: block;
+  }
+  .hero__title_box{
+    display: flex;
+    align-items: center;
+  }
+   .hero__title {
+    color: #fff;
+    font-size: 80px;
+    gap: 0;
+  }
+
+  .hero__span {
+    color: #fff;
+    font-size: 80px;
+  }
+
+  .hero__text {
+    margin-top: 100px;
+    color: #fff;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
   @media (max-width: 450px) {
     .hero__block {
       display: block;
@@ -35,7 +69,9 @@
       animation: fadeInText 2s ease-in-out forwards;
       animation-delay: 2s;
     }
-  
+  .hero__title_box{
+    display: block;
+  }
     .hero__title {
       color: #fff;
       font-size: 60px;

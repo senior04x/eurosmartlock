@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title class="main__title">Euro Smart lock</title>
+    <meta property="og:title" content="Euro Smart Lock">
+    <meta property="og:description" content="это современный умный замок с дистанционным управлением и высоким
+    уровнем безопасности.">
+    <meta property="og:image" content="https://iili.io/2qhxiSs.png">
+    <meta property="og:url" content="https://eurosmartlock.uz">
     <link
       class="title__img"
       rel="icon"
@@ -26,9 +31,6 @@
   <body>
     <section class="img__content">
       <div class="container">
-        <div class="header__top_block">
-           <a class="header__top_link" href="./single.html">Обратный звонок</a>
-        </div>
         <div class="header__box">
           <div class="logo__box">
             <a class="logo" href="./index.html"></a>
@@ -41,6 +43,7 @@
             />
           </div>
           <div class="header__btn_box" id="menu">
+            <a class="phone__number big-p" href="./single.html">Последний выбор</a>
             <a
               class="phone__number big-p"
               href="https://www.instagram.com/euro_smartlock/"
@@ -63,6 +66,9 @@
           <div id="side-menu" class="side-menu">
             <span class="close-button" onclick="toggleMenu()"></span>
             <ul>
+              <li>
+                <a class="phone__number big-p" href="./single.html">Последний выбор</a>
+              </li>
               <li>
                 <a
                   class="phone__number big-p"
@@ -110,8 +116,7 @@
         </div>
       </div>
    </section>
-   
-    <section class="list__content scroll-transition container" id="content_product">
+   <section class="list__content container" id="content_product">
       <h1 class="content__title">Нажмите на продукт</h1>
       <div class="list__block">
         <template id="template">
@@ -141,6 +146,9 @@
           </div>
         </template>
       </div>
+      <p class="product__text">
+        Чтобы оформить заказ на Euro Smartlock, перейдите на страницу продукта и нажмите кнопку <strong>"Заказать"</strong>. После этого откроется модальное окно, где вам нужно ввести своё имя и номер телефона. Убедитесь, что данные введены правильно. Также, если требуется, укажите цену. После заполнения формы нажмите <strong>"Подтвердить заказ"</strong>. Вы получите уведомление на указанный номер о принятии заказа, и менеджер свяжется с вами для подтверждения деталей. Если у вас есть вопросы, обращайтесь в службу поддержки.
+      </p>
       <button id="more-btn" class="more-btn" style="display: none">
         Показать еще 4
       </button>
@@ -283,7 +291,34 @@
       }
       </script>
       
-   
+      <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyBeL_ZGBa3eBPJ6ug6Mjpe5LXjcy6glZj0",
+          authDomain: "eurosmartlock.firebaseapp.com",
+          projectId: "eurosmartlock",
+          storageBucket: "eurosmartlock.appspot.com",
+          messagingSenderId: "1063845782476",
+          appId: "1:1063845782476:web:59ee924cb39fb15119f369",
+          measurementId: "G-JXQZ76VEES"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+      <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-storage.js"></script>
+      
   </body>
 </html>
 <div
