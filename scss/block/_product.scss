@@ -88,18 +88,18 @@ margin-bottom: 32px;
 }
 .price__old_text{
   text-decoration: line-through;
-  font-size: 11.2px;
+  font-size: 15px;
   color: #fff;
 }
 .price__new_text {
-  font-size: 15px;
+  font-size: 24px;
   display: flex;
   gap: 5px;
   font-weight: 600;
   color: #fff;
 }
 .price__box{
-  display: flex;
+  display: block;
   gap: 10px;
   align-items: center;
 }
@@ -108,6 +108,7 @@ margin-bottom: 32px;
 }
 @media (max-width: 450px) {
   .list__content {
+    height: auto;
     padding: 20px 10px; /* Kichik ekranda qulay padding */
   }
   .content__title{
@@ -126,25 +127,21 @@ margin-bottom: 32px;
     width: 100%; /* Rasmni konteynerga moslashtirdim */
     height: auto; /* Proportsiyani saqlash uchun */
   }
-// .img__block{
-// // padding: 5px;
-// }
-
 .content__list_title{
   color: #fff;
   font-size: 20px;
   margin-bottom: 5px;
 }
 .price__box{
-  
+  display: block;
 }
 .price__old_text{
 color: #fff;
-font-size: 8px;
+font-size: 10px;
 }
 .price__new_text{
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
 }
 .product__text{
   display: none;
