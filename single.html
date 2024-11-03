@@ -35,6 +35,7 @@
                 type="text"
                 autocomplete="off"
                 placeholder="Поиск продуктов и категорий"
+                style="display: none;"
               />
            </div>
           
@@ -47,32 +48,47 @@
               Наш адрес
             </a>
             <a class="phone__number big-p" style="color: #000;" href="tel:+998909447240">
-              Контакты
+              Телеграм
             </a>
+            <a class="phone__number big-p" style="color: #000;" href="tel:+998909447240">
+              Фейсбук
+            </a>
+           
           </div>
+          <a class="phone__number2 big-p" style="color: #4295E4;" href="tel:+998909447240">
+            +998 90 944 72 40
+          </a>
           <div class="menu-button-single" onclick="toggleMenu()"></div>
-          <div id="side-menu" style="background-color: #161c24;" class="side-menu">
-             <span class="close-button" onclick="toggleMenu()"></span>
-              <ul>
-                <li>
-                  <a class="phone__number  big-p" style="color: #000;" href="./index.html">Главная</a>
-                </li>
-                  <li> 
-                    <a class="phone__number big-p" href="https://www.instagram.com/euro_smartlock/" target="_blank">
-                    Инстаграм
-                  </a>
-                </li>
-                  <li>
-                    <a class="phone__number big-p" href="https://yandex.uz/maps/-/CDTHIO1-" target="_blank">
-                      Наш адрес
-                    </a>
-                  </li>
-                  <li>
-                    <a class="phone__number big-p" href="tel:+79665588499">
-                      Контакты
-                    </a>
-                  </li>
-              </ul>
+          <div id="side-menu" class="side-menu">
+            <span class="close-button" onclick="toggleMenu()"></span>
+            <ul>
+              <li>
+                <a class="phone__number big-p" href="./single.html">Главная</a>
+              </li>
+              <li>
+                <a
+                  class="phone__number big-p"
+                  href="https://www.instagram.com/euro_smartlock/"
+                  target="_blank"
+                >
+                  Инстаграм
+                </a>
+              </li>
+              <li>
+                <a
+                  class="phone__number big-p"
+                  href="https://yandex.uz/maps/-/CDTHIO1-"
+                  target="_blank"
+                >
+                  Наш адрес
+                </a>
+              </li>
+              <li>
+                <a class="phone__number big-p" href="tel:+998909447240">
+                 90 944 7240
+                </a>
+              </li>
+            </ul>
           </div>
           </div>
         
@@ -177,16 +193,42 @@
       <div class="container">
         <div class="footer__block">
           <div class="footer__logo_box">
-            <a href="./index.html"><img class="logo2" src="./img/logo-footer.png" alt="img" /></a>
+            <div class="footer__logo_block">
+              <a class="logo2" href="./index.html"
+              ><img src="./img/logo-footer.png" alt="img"
+            /></a>
+            <h4 class="footer__list_title2">Наши контакты</h4>
+            </div>
             <ul class="footer__list_icon">
               <li class="icon__item">
-                <a href="https://t.me/EURO_Smart_lock"><img src="./img/telegram.png" alt="img" /></a>
+                <a href="https://t.me/EURO_Smart_lock"
+                  ><img src="./img/telegram.png" alt="img"
+                /></a>
               </li>
               <li class="icon__item">
-               <a href="https://www.instagram.com/euro_smartlock?igsh=MXFidjlhOXRtZWMweQ=="> <img src="./img/instagram.png" alt="img" /></a>
+                <a
+                  href="https://www.instagram.com/euro_smartlock?igsh=MXFidjlhOXRtZWMweQ=="
+                >
+                  <img src="./img/instagram.png" alt="img"
+                /></a>
               </li>
               <li class="icon__item">
-              <a href="https://www.facebook.com/profile.php?id=61566172770766&mibextid=ZbWKwL"><img src="./img/facebook.png" alt="img" /></a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61566172770766&mibextid=ZbWKwL"
+                  ><img src="./img/facebook.png" alt="img"
+                /></a>
+              </li>
+              <li class="icon__item">
+                <a
+                  href="https://yandex.uz/maps/-/CDTHIO1-"
+                  ><img style="border-radius: 50%;" src="./img/yandexmaps.png" alt="img"
+                /></a>
+              </li>
+              <li class="icon__item">
+                <a
+                  href="tel:+998909447240"
+                  ><img style="border-radius: 50%;" src="./img/kontact.jpg" alt="img"
+                /></a>
               </li>
             </ul>
           </div>
@@ -195,13 +237,7 @@
               <h4 class="footer__list_title">Навигация</h4>
               <ul class="footer__list">
                 <li class="footer__list_item">
-                  <a class="footer__list_link" href="">Главная</a>
-                </li>
-                <li class="footer__list_item">
-                  <a class="footer__list_link" href="">Каталог</a>
-                </li>
-                <li class="footer__list_item">
-                  <a class="footer__list_link" href="">Оптовая продажа</a>
+                  <a class="footer__list_link" href="./index.html">Главная</a>
                 </li>
                 <li class="footer__list_item">
                   <a class="footer__list_link" href="">О нас</a>
@@ -234,25 +270,13 @@
                 </li>
               </ul>
             </div>
-            <div class="footer__list_box">
-              <h4 class="footer__list_title">информация</h4>
-              <ul class="footer__list">
-                <li class="footer__list_item">
-                  <a class="footer__list_link" href="#">Доставка и оплата</a>
-                </li>
-                <li class="footer__list_item">
-                  <a class="footer__list_link" href="#">Гарантии</a>
-                </li>
-                <li class="footer__list_item">
-                  <a class="footer__list_link" href="#">Возврат товара</a>
-                </li>
-              </ul>
-            </div>
+          
           </div>
         </div>
       </div>
       <hr style="border: 1px solid #fff; opacity: 0.08" />
-      <p class="footer__bottom_text">© 2021 Golden Soft All rights reserved.</p>
+      <p class="footer__bottom_text">Euro Smart lock company</p>
+
     </footer>
     <script type="module" src="./js/single.js"></script>
     <script src="./js/animated.js"></script>

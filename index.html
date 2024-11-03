@@ -40,6 +40,7 @@
               type="text"
               autocomplete="off"
               placeholder="Поиск продуктов и категорий"
+              style="display: none;"
             />
           </div>
           <div class="header__btn_box" id="menu">
@@ -59,15 +60,22 @@
               Наш адрес
             </a>
             <a class="phone__number big-p" href="tel:+998909447240">
-              Контакты
+              Телеграм
             </a>
+            <a class="phone__number big-p" href="tel:+998909447240">
+              Фейсбук
+            </a>
+            
           </div>
+          <a class="phone__number big-p" href="tel:+998909447240">
+            +998 90 944 72 40
+          </a>
           <div class="menu-button" onclick="toggleMenu()"></div>
           <div id="side-menu" class="side-menu">
             <span class="close-button" onclick="toggleMenu()"></span>
             <ul>
               <li>
-                <a class="phone__number big-p" href="./single.html">Последний выбор</a>
+                <a class="phone__number big-p" href="./single.html">Последний</a>
               </li>
               <li>
                 <a
@@ -88,8 +96,8 @@
                 </a>
               </li>
               <li>
-                <a class="phone__number big-p" href="tel:+79665588499">
-                  Контакты
+                <a class="phone__number big-p" href="tel:+998909447240">
+                 90 944 7240
                 </a>
               </li>
             </ul>
@@ -109,7 +117,7 @@
               уровнем безопасности.
             </p>
            
-       <a class="btn-primary2" href="#content_product">
+       <a class="btn-primary2 big-p" href="#content_product">
         Как заказать?
        </a>
           </div>
@@ -135,10 +143,10 @@
               <p class="content__list_title"></p>
               <div class="price__box">
                 <p class="price__new_text">
-                  <span class="price__new">$30.00</span>$
+                  <span class="price__new">$30.00</span>сум
                 </p>
                 <p class="price__old_text">
-                  <span class="price__old">$50.00</span>$
+                  <span class="price__old">$50.00</span>сум
                 </p>
                
               </div>
@@ -183,9 +191,12 @@
       <div class="container">
         <div class="footer__block">
           <div class="footer__logo_box">
-            <a class="logo2" href="./index.html"
+            <div class="footer__logo_block">
+              <a class="logo2" href="./index.html"
               ><img src="./img/logo-footer.png" alt="img"
             /></a>
+            <h4 class="footer__list_title2">Наши контакты</h4>
+            </div>
             <ul class="footer__list_icon">
               <li class="icon__item">
                 <a href="https://t.me/EURO_Smart_lock"
@@ -205,6 +216,18 @@
                   ><img src="./img/facebook.png" alt="img"
                 /></a>
               </li>
+              <li class="icon__item">
+                <a
+                  href="https://yandex.uz/maps/-/CDTHIO1-"
+                  ><img style="border-radius: 50%;" src="./img/yandexmaps.png" alt="img"
+                /></a>
+              </li>
+              <li class="icon__item">
+                <a
+                  href="tel:+998909447240"
+                  ><img style="border-radius: 50%;" src="./img/kontact.jpg" alt="img"
+                /></a>
+              </li>
             </ul>
           </div>
           <div class="list__block2">
@@ -212,13 +235,7 @@
               <h4 class="footer__list_title">Навигация</h4>
               <ul class="footer__list">
                 <li class="footer__list_item">
-                  <a class="footer__list_link" href="">Главная</a>
-                </li>
-                <li class="footer__list_item">
-                  <a class="footer__list_link" href="">Каталог</a>
-                </li>
-                <li class="footer__list_item">
-                  <a class="footer__list_link" href="">Оптовая продажа</a>
+                  <a class="footer__list_link" href="./index.html">Главная</a>
                 </li>
                 <li class="footer__list_item">
                   <a class="footer__list_link" href="">О нас</a>
@@ -251,26 +268,12 @@
                 </li>
               </ul>
             </div>
-            <div class="footer__list_box">
-              <h4 class="footer__list_title">информация</h4>
-              <ul class="footer__list">
-                <li class="footer__list_item">
-                  <a class="footer__list_link" href="#">Доставка и оплата</a>
-                </li>
-                <li class="footer__list_item">
-                  <a class="footer__list_link" href="#">Гарантии</a>
-                </li>
-                <li class="footer__list_item">
-                  <a class="footer__list_link" href="#">Возврат товара</a>
-                </li>
-              </ul>
-            </div>
+          
           </div>
         </div>
       </div>
       <hr style="border: 1px solid #fff; opacity: 0.08" />
       <p class="footer__bottom_text">Euro Smart lock company</p>
-      <small class="footer__small">wep site edit by omankuloff</small>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script

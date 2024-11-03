@@ -172,7 +172,7 @@ h1, h2, h3, h4, p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  gap: 40px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -436,6 +436,9 @@ h1, h2, h3, h4, p {
   }
   .big-p {
     color: #fff;
+  }
+  .phone__number2 {
+    display: none;
   }
 }
 .menu-button {
@@ -752,7 +755,7 @@ h1, h2, h3, h4, p {
   background-color: transparent;
   outline: none;
   color: #fff;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #4295E4;
   padding: 0;
   font-size: 14px;
 }
@@ -889,6 +892,25 @@ h1, h2, h3, h4, p {
   -webkit-box-shadow: inset -1px 0 0 0 #eaeaea, inset 1px 0 0 0 #eaeaea, inset 0 -1px 0 0 #eaeaea;
           box-shadow: inset -1px 0 0 0 #eaeaea, inset 1px 0 0 0 #eaeaea, inset 0 -1px 0 0 #eaeaea;
   margin-bottom: 20px; /* Pastdagi bo'sh joy */
+  margin-bottom: 20px; /* Pastki bo'sh joy */
+  background-image: url("../../img/sss.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.list__box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Qoraytirish (0.5 = 50%) */
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px); /* Blur effekti */
+  z-index: -1; /* Orqa fonda turishi uchun */
 }
 
 .img__block {
@@ -930,10 +952,12 @@ h1, h2, h3, h4, p {
   left: 6px;
   padding: 2px 5px;
   margin: 0;
-  background-color: #fff;
-  color: #000;
   font-size: 12px;
   font-weight: 700;
+  background-color: rgba(241, 241, 241, 0.5764705882);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  color: #000;
 }
 
 .title__box {
@@ -944,14 +968,14 @@ h1, h2, h3, h4, p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: #000;
+  color: #fff;
   font-size: 18px;
 }
 
 .price__old_text {
   text-decoration: line-through;
   font-size: 11.2px;
-  color: #000;
+  color: #fff;
 }
 
 .price__new_text {
@@ -961,7 +985,7 @@ h1, h2, h3, h4, p {
   display: flex;
   gap: 5px;
   font-weight: 600;
-  color: #000;
+  color: #fff;
 }
 
 .price__box {
@@ -991,47 +1015,22 @@ h1, h2, h3, h4, p {
     gap: 10px; /* Elementlar orasida bo'sh joy */
     padding: 10px;
   }
-  .list__box {
-    margin-bottom: 20px; /* Pastki bo'sh joy */
-    background-image: url("../../img/sss.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    z-index: 1;
-  }
-  .list__box::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Qoraytirish (0.5 = 50%) */
-    -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px); /* Blur effekti */
-    z-index: -1; /* Orqa fonda turishi uchun */
-  }
   .list__box img {
     width: 100%; /* Rasmni konteynerga moslashtirdim */
     height: auto; /* Proportsiyani saqlash uchun */
   }
-  .top__img_text {
-    background-color: rgba(241, 241, 241, 0.5764705882);
-    -webkit-backdrop-filter: blur(2px);
-            backdrop-filter: blur(2px);
-    color: #fff;
-  }
   .content__list_title {
     color: #fff;
-    font-size: 24px;
+    font-size: 20px;
+    margin-bottom: 5px;
   }
   .price__old_text {
     color: #fff;
-    font-size: 12px;
+    font-size: 8px;
   }
   .price__new_text {
     color: #fff;
-    font-size: 20px;
+    font-size: 14px;
   }
   .product__text {
     display: none;
@@ -1086,7 +1085,7 @@ h1, h2, h3, h4, p {
 
 .swiper-text {
   font-size: 32px;
-  margin-top: 20px;
+  margin-top: 60px;
   margin-bottom: 96px;
 }
 
@@ -1338,9 +1337,13 @@ h1, h2, h3, h4, p {
   position: absolute;
   color: #fff;
   font-size: 8px;
-  right: 10px;
+  right: 50%;
   bottom: 10px;
   opacity: 0.5;
+}
+
+.footer__list_title2 {
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -1350,15 +1353,28 @@ h1, h2, h3, h4, p {
   }
   .footer__logo_box {
     width: 100%;
+    display: block;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__logo_block {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
   .footer__list_icon {
-    margin: 0;
+    margin-top: 20px;
+    text-align: end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
   }
   .footer__bottom_text {
     font-size: 10px;
@@ -1368,6 +1384,14 @@ h1, h2, h3, h4, p {
   }
   .footer__small {
     font-size: 4px;
+  }
+  .footer__list_title2 {
+    display: block;
+    margin-top: 30px;
+    color: #fff;
+    font-size: 16px;
+    text-align: end;
+    opacity: 0.7;
   }
 }
 /* Global Styles */

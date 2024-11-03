@@ -71,9 +71,12 @@
     position: absolute;
     color: #fff;
     font-size: 8px;
-    right: 10px;
+    right: 50%;
     bottom: 10px;
     opacity: 0.5;
+  }
+  .footer__list_title2{
+    display: none;
   }
   @media (max-width:768px){
     .footer{
@@ -82,11 +85,18 @@
     }
     .footer__logo_box{
         width: 100%;
-        display: flex;
+        display: block;
         justify-content: space-between;
     }
+    .footer__logo_block{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
     .footer__list_icon{
-        margin: 0;
+        margin-top: 20px;
+        text-align: end;
+        justify-content: end;
     }
     .footer__bottom_text{
         font-size: 10px;
@@ -96,5 +106,13 @@
     }
     .footer__small{
       font-size: 4px;
+    }
+    .footer__list_title2{
+      display: block;
+      margin-top: 30px;
+      color: #fff;
+      font-size: 16px;
+      text-align: end;
+      opacity: 0.7;
     }
   }

@@ -31,8 +31,8 @@ async function loadProductPage() {
           <p class="single__text">${product.text}</p>
           <span class="single__span">Цена:</span>
           <div class="single__price_box">
-            <h2 class="single__new_price">${product.newPrice}<span>$</span></h2>
-            <h2 class="single__old_price">${product.oldPrice}<span>$</span></h2>
+            <h2 class="single__new_price">${product.newPrice}<span>сум</span></h2>
+            <h2 class="single__old_price">${product.oldPrice}<span>сум</span></h2>
           </div>
           <div class="order__box">
           <button type="button" class="single__add_basket" data-bs-toggle="modal" data-bs-target="#staticBackdrop">

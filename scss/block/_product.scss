@@ -19,8 +19,24 @@ margin-bottom: 32px;
   width: 100%; /* Ustunning to'liq kengligini olish */
   box-shadow: inset -1px 0 0 0 #eaeaea, inset 1px 0 0 0 #eaeaea, inset 0 -1px 0 0 #eaeaea;
   margin-bottom: 20px; /* Pastdagi bo'sh joy */
+  margin-bottom: 20px; /* Pastki bo'sh joy */
+    background-image: url("../../img/sss.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
 }
-
+.list__box::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Qoraytirish (0.5 = 50%) */
+  backdrop-filter: blur(10px); /* Blur effekti */
+  z-index: -1; /* Orqa fonda turishi uchun */
+}
 
 .img__block {
   width: 100%;
@@ -51,10 +67,11 @@ margin-bottom: 32px;
   left: 6px;
   padding: 2px 5px;
   margin: 0;
-  background-color: #fff;
-  color: #000;
   font-size: 12px;
   font-weight: 700;
+    background-color: #f1f1f193;
+    backdrop-filter: blur(2px);
+    color: #000;
 }
 .title__box {
   padding: 10px;
@@ -66,20 +83,20 @@ margin-bottom: 32px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: #000;
+  color: #fff;
   font-size: 18px;
 }
 .price__old_text{
   text-decoration: line-through;
   font-size: 11.2px;
-  color: #000;
+  color: #fff;
 }
 .price__new_text {
   font-size: 15px;
   display: flex;
   gap: 5px;
   font-weight: 600;
-  color: #000;
+  color: #fff;
 }
 .price__box{
   display: flex;
@@ -103,25 +120,8 @@ margin-bottom: 32px;
     padding: 10px;
   }
 
-  .list__box {
-    margin-bottom: 20px; /* Pastki bo'sh joy */
-    background-image: url("../../img/sss.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    z-index: 1;
-  }
-.list__box::before{
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Qoraytirish (0.5 = 50%) */
-  backdrop-filter: blur(10px); /* Blur effekti */
-  z-index: -1; /* Orqa fonda turishi uchun */
-}
+  
+
   .list__box img {
     width: 100%; /* Rasmni konteynerga moslashtirdim */
     height: auto; /* Proportsiyani saqlash uchun */
@@ -129,23 +129,22 @@ margin-bottom: 32px;
 // .img__block{
 // // padding: 5px;
 // }
-.top__img_text{
-  background-color: #f1f1f193;
-  backdrop-filter: blur(2px);
-  color: #fff;
-}
+
 .content__list_title{
   color: #fff;
-  font-size: 24px;
+  font-size: 20px;
+  margin-bottom: 5px;
 }
-
+.price__box{
+  
+}
 .price__old_text{
 color: #fff;
-font-size: 12px;
+font-size: 8px;
 }
 .price__new_text{
   color: #fff;
-  font-size: 20px;
+  font-size: 14px;
 }
 .product__text{
   display: none;

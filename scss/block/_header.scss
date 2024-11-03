@@ -72,7 +72,7 @@
 
 .header__btn_box {
   display: flex;
-  gap: 20px;
+  gap: 40px;
   align-items: center;
 }
 .phone__number img {
@@ -133,6 +133,7 @@
   display: flex;
   gap: 5px;
 }
+
 .menu-button {
   display: none;
   background-image: url("../../img/Menu-button.svg");
@@ -274,6 +275,9 @@
   }
   .big-p{
     color: #fff;
+  }
+  .phone__number2{
+    display: none;
   }
 }
 
