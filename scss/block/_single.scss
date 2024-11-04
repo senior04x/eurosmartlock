@@ -111,10 +111,12 @@
   font-weight: 700;
   font-size: 48px;
   text-align: center;
-  color: #161c24;
+  color: #fff;
   margin: 0 auto 30px;
 }
-
+.modal-title{
+  color: #fff;
+}
 .product__order form input,
 .product__order form textarea {
   width: 100%;
@@ -122,7 +124,7 @@
   padding: 10px 20px;
   background-color: transparent;
   border: none;
-  color: #161c24;
+  color: #fff;
   font-size: 18px;
   margin-bottom: 20px;
   border-radius: 5px;
@@ -133,7 +135,7 @@
 
 .product__order form input::placeholder,
 .product__order form textarea::placeholder {
-    color: #161c248f;
+    color: #ffffff9c;
   font-size: 18px;
 }
 
@@ -152,13 +154,12 @@
 }
 
 .product__order form label {
-  color: #000;
+  color: #fff;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .product__order form button {
-  background-color: #4295e4;
   width: 100%;
   padding: 10px;
   margin-top: 10px;
@@ -167,13 +168,16 @@
   font-weight: 400;
   font-size: 20px;
   transition: all 0.5s;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: transparent;
+    backdrop-filter: blur(1px);
 }
 
-.product__order form button:hover {
-  background-color: #2b83d5;
+.btn-close2{
   color: #fff;
+  font-size: 35px;
 }
-
 /* Background Animations */
 
 .single__img2 {
@@ -211,6 +215,37 @@
   background: #4295e4;
   padding: 10px;
   border-radius: 0 10px 10px 0;
+}
+.modal-content{
+  background-color: transparent;
+  background: rgba(0, 0, 0, 0.5); /* Qoraytirish (0.5 = 50%) */
+  backdrop-filter: blur(20px); /* Blur effekti */
+  transition: right 0.5s ease;
+  z-index: 1000;
+  box-shadow: -5px 0 5px rgba(0, 0, 0, 0.3);
+}
+.modal-header{
+  display: block;
+  border-bottom: none;
+}
+.modal-header div{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+}
+#single__img_product{
+  width: 40%;
+  height: 40%;
+  border-radius: 10px;
+}
+.top__img_text2{
+  padding: 2px 5px;
+  font-size: 12px;
+  font-weight: 700;
+    background-color: #f1f1f193;
+    backdrop-filter: blur(2px);
+    color: #000;
 }
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -259,9 +294,13 @@
   .product__order {
     padding: 50px 50px;
   }
+  .modal,.fade{
+    background-color: transparent;
+  }
 .modal-dialog{
   
-  padding: 20px;
+  padding: 5px;
+  background-color: transparent;
 }
   .product__order_title {
     font-size: 25px;

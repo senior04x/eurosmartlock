@@ -49,8 +49,10 @@ async function loadProductPage() {
 
       // Mahsulot nomini input maydoniga qo'shish
       const productInput = findElement("#product__input_title");
-      if (productInput) {
+      const productImg = findElement("#single__img_product")
+      if (productInput,productImg) {
         productInput.value = product.title;
+        productImg.src = product.imageSrc
       }
 
       // Sahifadagi asosiy kontentga mahsulotni HTML kodini qo'shamiz
