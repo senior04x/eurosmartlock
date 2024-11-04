@@ -1366,7 +1366,7 @@ h1, h2, h3, h4, p {
             justify-content: space-between;
   }
   .footer__list_icon {
-    margin-top: 20px;
+    margin-top: 60px;
     text-align: end;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
