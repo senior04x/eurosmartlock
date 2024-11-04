@@ -376,11 +376,8 @@ h1, h2, h3, h4, p {
     font-size: 8px;
     margin: 0;
   }
-  .header {
-    padding: 5px 10px;
-  }
   .header__box {
-    padding: 20px;
+    padding: 10px 20px;
   }
   .logo2 {
     width: 80px;
@@ -394,9 +391,6 @@ h1, h2, h3, h4, p {
   .logo__box {
     gap: 0;
     width: 100%;
-  }
-  .header__btn_box {
-    display: none;
   }
   .header__btn_box {
     display: none;
@@ -568,7 +562,7 @@ h1, h2, h3, h4, p {
 @media (max-width: 450px) {
   .hero__block {
     display: block;
-    padding: 40px 30px 10px 30px;
+    padding: 10px 30px;
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -596,7 +590,7 @@ h1, h2, h3, h4, p {
   }
   .hero__text_box {
     position: absolute;
-    top: 28%;
+    top: 25%;
     right: 30px;
     opacity: 0;
     -webkit-transform: translateY(20px);

@@ -39,7 +39,7 @@
   @media (max-width: 450px) {
     .hero__block {
       display: block;
-      padding: 40px 30px 10px 30px;
+      padding:  10px 30px;
       position: relative;
       width: 100%;
       overflow: hidden;
@@ -62,7 +62,7 @@
   
     .hero__text_box {
       position: absolute;
-      top: 28%;
+      top: 25%;
       right: 30px;
       opacity: 0;
       transform: translateY(20px);
