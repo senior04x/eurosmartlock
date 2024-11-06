@@ -74,7 +74,7 @@ h1, h2, h3, h4, p {
 }
 
 .header__box {
-  padding-top: 30px;
+  padding-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
