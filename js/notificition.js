@@ -2,7 +2,7 @@ window.onload = function() {
   // Notification 3 sekunddan keyin chiqadi
   setTimeout(() => {
       showNotification();
-  }, 1500);
+  }, 500);
 };
 
 function showNotification() {
