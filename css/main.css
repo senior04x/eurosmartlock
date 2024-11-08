@@ -1552,6 +1552,14 @@ h1, h2, h3, h4, p {
   color: #000;
 }
 
+.modal-body form input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset; /* Orqa fonni shaffof qilib o'rnatish */
+  -webkit-text-fill-color: #fff; /* Matn rangini qora qilish */
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+  background-color: transparent;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .single__product {
