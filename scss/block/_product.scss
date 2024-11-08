@@ -48,7 +48,8 @@ margin-bottom: 32px;
   &:hover {
     transition: 0.7s;
   }
-  background: url("../../img/videobg.gif");
+  background: url("../../img/videobg2.gif");
+  background: none;
 }
 .list__content_img{
  max-width: 100%;
@@ -124,8 +125,6 @@ margin-bottom: 32px;
     gap: 10px; /* Elementlar orasida bo'sh joy */
     padding: 10px;
   }
-
-  
 
   .list__box img {
     width: 100%; /* Rasmni konteynerga moslashtirdim */

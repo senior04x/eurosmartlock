@@ -39,7 +39,7 @@
   @media (max-width: 450px) {
     .hero__block {
       display: block;
-      padding:  10px 30px;
+      padding:  40px 30px;
       position: relative;
       width: 100%;
       overflow: hidden;
@@ -51,13 +51,13 @@
       opacity: 0;
       transform: translateY(20px);
       animation: fadeIn 2s ease-in-out forwards;
-      filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.5));
+      // filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.5));
       transition: transform 0.3s ease, filter 0.3s ease;
     }
   
     .hero__img:hover {
       transform: scale(1.05);
-      filter: drop-shadow(12px 12px 15px rgba(0, 0, 0, 0.7));
+      // filter: drop-shadow(12px 12px 15px rgba(0, 0, 0, 0.7));
     }
   
     .hero__text_box {

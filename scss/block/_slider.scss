@@ -79,7 +79,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Qoraytirish (0.5 = 50%) */
+  // background: rgba(3, 25, 112, 0.152); /* Qoraytirish (0.5 = 50%) */
   backdrop-filter: blur(10px); /* Blur effekti */
   z-index: -1; /* Orqa fonda turishi uchun */
 }
@@ -98,8 +98,13 @@
 @media (max-width: 450px) {
  .img__content{
   background-position: left;
+  background-size: cover;
+  height: 90vh;
+ 
  }
-  
+ .img__content::before{
+  background: #00000064;
+ }
   .slider__title_box {
     margin-bottom: 20px;
   }
