@@ -21,9 +21,10 @@ margin-bottom: 32px;
   margin-bottom: 20px; /* Pastdagi bo'sh joy */
   margin-bottom: 20px; /* Pastki bo'sh joy */
     background-image: url("../../img/sss.jpg");
-    background: url("../../img/videobg.gif");
+    background: url("../../img/videobg2.gif");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     position: relative;
     z-index: 1;
 }
@@ -43,8 +44,8 @@ margin-bottom: 32px;
   width: 100%;
   overflow: hidden;
   position: relative;
+  height: auto;
   &:hover {
-    border-radius: 0;
     transition: 0.7s;
   }
   background: url("../../img/videobg.gif");

@@ -763,11 +763,12 @@ h1, h2, h3, h4, p {
 
 .img__content {
   background-image: url("../../img/sss.jpg");
-  background: url("../../img/videobg.gif");
+  background: url("../../img/videobg2.gif");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   position: relative;
+  background-position: center;
   z-index: 1;
 }
 
@@ -800,6 +801,9 @@ h1, h2, h3, h4, p {
 }
 
 @media (max-width: 450px) {
+  .img__content {
+    background-position: left;
+  }
   .slider__title_box {
     margin-bottom: 20px;
   }
@@ -880,9 +884,10 @@ h1, h2, h3, h4, p {
   margin-bottom: 20px; /* Pastdagi bo'sh joy */
   margin-bottom: 20px; /* Pastki bo'sh joy */
   background-image: url("../../img/sss.jpg");
-  background: url("../../img/videobg.gif");
+  background: url("../../img/videobg2.gif");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   position: relative;
   z-index: 1;
 }
@@ -904,10 +909,10 @@ h1, h2, h3, h4, p {
   width: 100%;
   overflow: hidden;
   position: relative;
+  height: auto;
   background: url("../../img/videobg.gif");
 }
 .img__block:hover {
-  border-radius: 0;
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }

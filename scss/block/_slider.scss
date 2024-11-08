@@ -64,11 +64,12 @@
 .img__content{
   // padding: 0 10px;
   background-image: url("../../img/sss.jpg");
-  background: url("../../img/videobg.gif");
+  background: url("../../img/videobg2.gif");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   position: relative;
+  background-position: center;
   z-index: 1;
  }
  .img__content::before {
@@ -95,7 +96,9 @@
   backdrop-filter:  blur(20px);
 }
 @media (max-width: 450px) {
- 
+ .img__content{
+  background-position: left;
+ }
   
   .slider__title_box {
     margin-bottom: 20px;
