@@ -18,8 +18,6 @@ margin-bottom: 32px;
 .list__box {
   width: 100%; /* Ustunning to'liq kengligini olish */
   box-shadow: inset -1px 0 0 0 #eaeaea, inset 1px 0 0 0 #eaeaea, inset 0 -1px 0 0 #eaeaea;
-  margin-bottom: 20px; /* Pastdagi bo'sh joy */
-  margin-bottom: 20px; /* Pastki bo'sh joy */
     background-image: url("../../img/sss.jpg");
     background: url("../../img/videobg2.gif");
     background-repeat: no-repeat;
@@ -35,27 +33,23 @@ margin-bottom: 32px;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Qoraytirish (0.5 = 50%) */
+  // background: rgba(0, 0, 0, 0.263); /* Qoraytirish (0.5 = 50%) */
   backdrop-filter: blur(10px); /* Blur effekti */
   z-index: -1; /* Orqa fonda turishi uchun */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img__block {
   width: 100%;
   overflow: hidden;
   position: relative;
-  height: auto;
   &:hover {
     transition: 0.7s;
   }
-  background: url("../../img/videobg2.gif");
-  background: none;
 }
-.list__content_img{
- max-width: 100%;
-  height: 400px;
-  float: left;
-}
+
 .img__block:hover .list__content_img {
   transform: scale(1.05);
 }
@@ -89,7 +83,7 @@ margin-bottom: 32px;
   overflow: hidden;
   text-overflow: ellipsis;
   color: #fff;
-  font-size: 18px;
+  font-size: 22px;
 }
 .price__old_text{
   text-decoration: line-through;
