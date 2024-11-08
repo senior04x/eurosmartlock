@@ -783,6 +783,21 @@ h1, h2, h3, h4, p {
   z-index: -1; /* Orqa fonda turishi uchun */
 }
 
+.swiper-slide {
+  position: relative;
+}
+
+.swiper-slide h1 {
+  margin-top: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 96.5%;
+  padding: 10px;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+
 @media (max-width: 450px) {
   .slider__title_box {
     margin-bottom: 20px;
@@ -832,36 +847,12 @@ h1, h2, h3, h4, p {
     -webkit-transition: opacity 0.5s ease;
     transition: opacity 0.5s ease;
   }
-  .swiper-slide:hover .project-overlay {
-    display: block;
-    opacity: 1;
+  .swiper-slide h1 {
+    font-size: medium;
+    padding: 10px;
+    width: 93%;
   }
 }
-.swiper-slide {
-  position: relative;
-}
-
-.project-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(69, 79, 91, 0.7098039216);
-  color: #fff;
-  padding: 20px;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-}
-
-.swiper-slide:hover .project-overlay {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
 .list__content {
   height: 100vh;
   padding: 50px 100px 50px 100px;
@@ -1093,146 +1084,6 @@ h1, h2, h3, h4, p {
     font-size: 12px;
     margin-top: 50px;
     margin-bottom: 20px;
-  }
-}
-.Inputs__section {
-  padding: 64px 346px 56px 346px;
-  background-color: #f2f8ff;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.inputs__block {
-  max-width: 748px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.inputs__title {
-  font-weight: 600;
-  font-size: 44px;
-  line-height: 141%;
-  text-align: center;
-  color: #161c24;
-  margin-bottom: 24px;
-}
-
-.inputs__text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 162%;
-  text-align: center;
-  color: #454f5b;
-  margin-bottom: 24px;
-  width: 518px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.main__inpust_box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 24px;
-}
-
-.main__input::-webkit-input-placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 162%;
-  color: #454f5b;
-}
-
-.main__input::-moz-placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 162%;
-  color: #454f5b;
-}
-
-.main__input:-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 162%;
-  color: #454f5b;
-}
-
-.main__input::-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 162%;
-  color: #454f5b;
-}
-
-.main__input::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 162%;
-  color: #454f5b;
-}
-
-.main__input:focus {
-  border: 2px solid #4295e4;
-}
-
-.main__input {
-  width: 240px;
-  height: 50px;
-  background: rgba(22, 28, 36, 0.04);
-  padding: 12px 16px;
-  border: none;
-  outline: none;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 162%;
-  color: #454f5b;
-}
-
-.input__btn {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 162%;
-  color: #fff;
-  padding: 12px 70px;
-  background-color: #4295e4;
-  border: none;
-}
-
-@media (max-width: 768px) {
-  .Inputs__section {
-    padding: 20px 10px;
-  }
-  .inputs__block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .inputs__title {
-    width: 100%;
-    text-align: center;
-    font-size: 28px;
-  }
-  .inputs__text {
-    font-size: 12px;
-  }
-  .main__inpust_box {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 100%;
-  }
-  .main__input {
-    width: 100%;
-  }
-  .input__btn {
-    width: 100%;
   }
 }
 .footer {
