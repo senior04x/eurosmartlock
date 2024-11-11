@@ -63,7 +63,7 @@
 }
 .img__content{
   // padding: 0 10px;
-  background-image: url("../../img/sss.jpg");
+  // background-image: url("../../img/sss.jpg");
   background: url("../../img/videobg2.gif");
   background-repeat: no-repeat;
   background-size: cover;
@@ -82,7 +82,9 @@
   // background: rgba(3, 25, 112, 0.152); /* Qoraytirish (0.5 = 50%) */
   backdrop-filter: blur(10px); /* Blur effekti */
   z-index: -1; /* Orqa fonda turishi uchun */
+ 
 }
+.img__content
 .swiper-slide{
   position: relative;
 }
@@ -99,11 +101,11 @@
  .img__content{
   background-position: left;
   background-size: cover;
-  height: 90vh;
+  height: 100vh;
  
  }
  .img__content::before{
-  background: #00000064;
+  // background: #00000064;
  }
   .slider__title_box {
     margin-bottom: 20px;

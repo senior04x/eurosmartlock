@@ -671,7 +671,6 @@ h1, h2, h3, h4, p {
 }
 
 .img__content {
-  background-image: url("../../img/sss.jpg");
   background: url("../../img/videobg2.gif");
   background-repeat: no-repeat;
   background-size: cover;
@@ -693,7 +692,7 @@ h1, h2, h3, h4, p {
   z-index: -1; /* Orqa fonda turishi uchun */
 }
 
-.swiper-slide {
+.img__content .swiper-slide {
   position: relative;
 }
 
@@ -712,10 +711,7 @@ h1, h2, h3, h4, p {
   .img__content {
     background-position: left;
     background-size: cover;
-    height: 90vh;
-  }
-  .img__content::before {
-    background: rgba(0, 0, 0, 0.3921568627);
+    height: 100vh;
   }
   .slider__title_box {
     margin-bottom: 20px;
@@ -794,7 +790,6 @@ h1, h2, h3, h4, p {
   width: 100%; /* Ustunning to'liq kengligini olish */
   -webkit-box-shadow: inset -1px 0 0 0 #eaeaea, inset 1px 0 0 0 #eaeaea, inset 0 -1px 0 0 #eaeaea;
           box-shadow: inset -1px 0 0 0 #eaeaea, inset 1px 0 0 0 #eaeaea, inset 0 -1px 0 0 #eaeaea;
-  background-image: url("../../img/sss.jpg");
   background: url("../../img/videobg2.gif");
   background-repeat: no-repeat;
   background-size: cover;
