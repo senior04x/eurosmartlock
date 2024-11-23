@@ -854,6 +854,14 @@ h1, h2, h3, h4, p {
   color: #000;
 }
 
+.product__img_logo {
+  position: absolute;
+  width: 50px;
+  height: auto;
+  top: 10px;
+  left: 10px;
+}
+
 .title__box {
   padding: 10px;
 }
@@ -930,6 +938,11 @@ h1, h2, h3, h4, p {
   }
   .product__text {
     display: none;
+  }
+  .product__img_logo {
+    max-width: 35px;
+    top: 10px;
+    left: 10px;
   }
 }
 @-webkit-keyframes flyInFromBottom {
