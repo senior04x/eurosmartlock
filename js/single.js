@@ -23,9 +23,12 @@ async function loadProductPage() {
     if (product) {
       const mainProducthtml = `
       <div class="single__block">
+      <div class="single__img_box">
         <img class="single__img" src="${product.imageSrc}" alt="img">
+        <img class="single__product__img_logo" src="./img/logo-footer.png" alt=""> 
+        </div> 
         <div class="single__content_box">
-          <p class="single__product_avaible"><span>В продаже:</span> ${product.available} <span>штук</span></p>  
+          <p class="single__product_avaible"><span>В продаже:</span> ${product.available} <span>штук</span></p>
           <img class="single__img2" src="${product.imageSrc}" alt="">
           <h1 class="single__title">${product.title}</h1>
           <p class="single__text">${product.text}</p>
