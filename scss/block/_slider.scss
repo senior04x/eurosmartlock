@@ -64,7 +64,7 @@
 .img__content{
   // padding: 0 10px;
   // background-image: url("../../img/backround-img.png");
-  // background: url("../../img/videobg2.gif");
+  background: url("../../img/videobg2.gif");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -104,9 +104,9 @@
   height: 100vh;
  
  }
- .img__content::before{
-  // background: #00000064;
- }
+//  .img__content::before{
+//   // background: #00000064;
+//  }
   .slider__title_box {
     margin-bottom: 20px;
   }
